@@ -1,0 +1,87 @@
+
+              padding: EdgeInsets.only(top: half - 35),
+              child: Container(
+                decoration: BoxDecoration(
+                    //color: Colors.transparent,
+                    //  color: Colors.amber,
+                    borderRadius: BorderRadius.circular(20)),
+                child: Column(
+                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: SizedBox(
+                        height: half * 0.96,
+                        child: PageView(
+                          scrollDirection: Axis.horizontal,
+                          children: [
+                            Column(
+                              children: [
+                                TextField(
+                                  keyboardType: TextInputType.emailAddress,
+                                  decoration: InputDecoration(
+                                      labelStyle: TextStyle(fontSize: 30),
+                                      contentPadding: EdgeInsets.only(
+                                          top: 20, left: 10, right: 10),
+                                      labelText: 'Email',
+                                      hoverColor: Colors.black),
+                                ),
+                                SizedBox(
+                                  height: 50,
+                                ),
+                                TextField(
+                                  keyboardType: TextInputType.emailAddress,
+                                  decoration: InputDecoration(
+                                      labelStyle: TextStyle(fontSize: 30),
+                                      contentPadding: EdgeInsets.only(
+                                          top: 20, left: 10, right: 10),
+                                      labelText: 'Password',
+                                      hoverColor: Colors.black),
+                                ),
+                              ],
+                            ),
+                            Column(
+                              children: [
+                                TextField(
+                                  onTap: () {
+                                    SplashScreen(
+                                      textWidget: IconFont(
+                                        iconName: 'c',
+                                        color: Colors.white,
+                                        size: 100,
+                                      ),
+                                    );
+                                  },
+                                  keyboardType: TextInputType.emailAddress,
+                                  decoration: InputDecoration(
+                                      labelStyle: TextStyle(fontSize: 30),
+                                      contentPadding: EdgeInsets.only(
+                                          top: 20, left: 10, right: 10),
+                                      labelText: 'Email',
+                                      hoverColor: Colors.black),
+                                ),
+                                SizedBox(
+                                  height: 50,
+                                ),
+                                TextField(
+                                  keyboardType: TextInputType.emailAddress,
+                                  decoration: InputDecoration(
+                                      labelStyle: TextStyle(fontSize: 30),
+                                      contentPadding: EdgeInsets.only(
+                                          top: 20, left: 10, right: 10),
+                                      labelText: 'Password',
+                                      hoverColor: Colors.black),
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            )
