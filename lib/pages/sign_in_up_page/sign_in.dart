@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:food/pages/sign_in_up_page/forgot_password.dart';
 import 'package:food/pages/welcome_page.dart';
 
 class SignIn extends StatefulWidget {
@@ -26,7 +27,15 @@ class _SignInState extends State<SignIn> {
     });
   }
 
-  _forgotPassword() {}
+  _forgotPassword() {
+    showModalBottomSheet(
+        context: context,
+        builder: (builder) {
+          return ff(
+            builder,
+          );
+        });
+  }
 
   @override
   Widget build(BuildContext context) {
