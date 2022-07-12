@@ -55,21 +55,23 @@ class _SignInSignUpState extends State<SignInSignUp> {
                       children: [Text('Login'), Text('SignUp')],
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.only(top: 20),
-                    child: SizedBox(
-                      height: height * 0.5,
-                      width: width,
-                      child: PageView(
-                        scrollDirection: Axis.horizontal,
-                        children: [
-                          SignIn(
-                            width: width,
-                          ),
-                          SignUp(
-                            width: width,
-                          ),
-                        ],
+                  Flexible(
+                    child: Padding(
+                      padding: EdgeInsets.only(top: 20),
+                      child: SizedBox(
+                        //height: height * 0.5,
+                        width: width,
+                        child: PageView(
+                          scrollDirection: Axis.horizontal,
+                          children: [
+                            SignIn(
+                              width: width,
+                            ),
+                            SignUp(
+                              width: width,
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   )

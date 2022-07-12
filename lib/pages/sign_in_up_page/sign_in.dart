@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:food/pages/sign_in_up_page/forgot_password.dart';
-import 'package:food/pages/welcome_page.dart';
 
 class SignIn extends StatefulWidget {
   final double width;
@@ -90,20 +89,21 @@ class _SignInState extends State<SignIn> {
               ),
             ),
           ),
-          SizedBox(height: 60),
-          Center(
-            child: SizedBox(
-              height: 60,
-              width: widget.width * 0.8,
-              child: FloatingActionButton(
-                elevation: 0,
-                backgroundColor: Colors.red,
-                onPressed: () {},
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30)),
-                child: Text(
-                  'Login',
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+          Flexible(
+            child: Center(
+              child: SizedBox(
+                height: 60,
+                width: widget.width * 0.8,
+                child: FloatingActionButton(
+                  elevation: 0,
+                  backgroundColor: Colors.red,
+                  onPressed: () {},
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30)),
+                  child: Text(
+                    'Login',
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
                 ),
               ),
             ),
